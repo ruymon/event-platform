@@ -12,7 +12,6 @@ interface LessonProps {
 export function Lesson({ title, slug, availableAt, type }: LessonProps) {
   const isLessonAvailable = false;
 
-
   return (
     <a href="#">
       <span className={styles.releaseDate}>{availableAt.toString()}</span>
