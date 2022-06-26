@@ -4,17 +4,17 @@ import styles from './styles.module.css';
 
 interface ResourceCardProps extends Partial<HTMLAnchorElement> {
   icon: ReactNode;
-  header: string;
+  headline: string;
   description: string;
 }
 
-export function ResourceCard({ icon, header, description, href }: ResourceCardProps ) {
+export function ResourceCard({ icon, headline, description, href }: ResourceCardProps ) {
   return (
     <a href={href} className={styles.container}>
       <div className={styles.iconContainer}>{ icon }</div>
       
       <div className={styles.details}>
-        <strong>{ header }</strong>
+        <strong>{ headline }</strong>
         <p>{ description }</p>
       </div>
 
