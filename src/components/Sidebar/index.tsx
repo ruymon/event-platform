@@ -7,12 +7,12 @@ export function Sidebar() {
       <span className={styles.title}>Cronograma de aulas</span>
 
       <div className={styles.lessonWrapper}>
-        <Lesson />
-        <Lesson />
-        <Lesson />
-        <Lesson />
-        <Lesson />
-        <Lesson />
+        <Lesson
+          title="Aula 1"
+          slug="aula-1"
+          availableAt={new Date()}
+          type="class"
+        />
       </div>
     </aside>
   )

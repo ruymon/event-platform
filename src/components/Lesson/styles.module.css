@@ -10,8 +10,12 @@
   @apply flex items-center justify-between;
 }
 
-.lessonStatus {
+.lessonStatusAvailable {
   @apply text-sm text-blue-500 font-medium flex items-center gap-2;
+}
+
+.lessonStatusSoon {
+  @apply text-sm text-orange-500 font-medium flex items-center gap-2;
 }
 
 .lessonPill {

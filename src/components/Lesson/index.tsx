@@ -1,21 +1,44 @@
-import { CheckCircle } from 'phosphor-react';
+import { CheckCircle, Lock } from 'phosphor-react';
+
 import styles from './styles.module.css';
 
-export function Lesson() {
+interface LessonProps {
+  title: string;
+  slug: string;
+  availableAt: Date;
+  type: 'live' | 'class';
+}
+
+export function Lesson({ title, slug, availableAt, type }: LessonProps) {
+  const isLessonAvailable = false;
+
+
   return (
     <a href="#">
-      <span className={styles.releaseDate}>Segunda • 21 de junho • 19h00</span>
+      <span className={styles.releaseDate}>{availableAt.toString()}</span>
 
       <div className={styles.cardContainer}>
         <header className={styles.cardHeader}>
-          <span className={styles.lessonStatus}>
-            <CheckCircle size={20} />
-            Conteúdo liberado
+
+          { isLessonAvailable ? (
+            <span className={styles.lessonStatusAvailable}>
+              <CheckCircle size={20} />
+              Conteúdo liberado
+            </span>
+          ) : (
+            <span className={styles.lessonStatusSoon}>
+              <Lock size={20} />
+              Em breve
+            </span>
+          )}
+
+
+          <span className={styles.lessonPill}>
+            { type === 'live' ? 'ao vivo' : 'Aula prática' }
           </span>
-          <span className={styles.lessonPill}>ao vivo</span>
         </header>
 
-        <strong className={styles.lessonTitle}>Abertura do evento Ignite labs</strong>
+        <strong className={styles.lessonTitle}>{title}</strong>
       </div>
     </a>
   )
