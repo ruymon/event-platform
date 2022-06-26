@@ -1,0 +1,23 @@
+.container {
+  @apply bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors;
+}
+
+.iconContainer {
+  @apply bg-green-700 h-full p-6 flex items-center;
+}
+
+.details {
+  @apply py-6 leading-relaxed;
+}
+
+.details strong {
+  @apply text-2xl;
+}
+
+.details p {
+  @apply text-sm text-gray-200 mt-2;
+}
+
+.caretContainer {
+  @apply h-full p-6 flex items-center text-gray-200;
+}
