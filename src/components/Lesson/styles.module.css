@@ -1,0 +1,23 @@
+.releaseDate {
+  @apply text-gray-300;
+}
+
+.cardContainer {
+  @apply rounded border border-gray-500 p-4 mt-2;
+}
+
+.cardHeader {
+  @apply flex items-center justify-between;
+}
+
+.lessonStatus {
+  @apply text-sm text-blue-500 font-medium flex items-center gap-2;
+}
+
+.lessonPill {
+  @apply text-xs uppercase rounded px-2 py-[0.125rem] text-green-300 border border-green-300 font-bold;
+}
+
+.lessonTitle {
+  @apply text-gray-200 mt-5 block;
+}
