@@ -1,5 +1,6 @@
 import { DiscordLogo, FileArrowDown, Lightning } from 'phosphor-react';
 import { ResourceCard } from '../ResourceCard';
+import { Teacher } from '../Teacher';
 import styles from './styles.module.css';
 
 export function Video() {
@@ -18,15 +19,11 @@ export function Video() {
             <h1>Aula 3 • Roteamento e player da aula</h1>
             <p>Nessa aula vamos dar início ao projeto criando a estrutura base da aplicação utilizando ReactJS, Vite e TailwindCSS. Vamos também realizar o setup do nosso projeto no GraphCMS criando as entidades da aplicação e integrando a API GraphQL gerada pela plataforma no nosso front-end utilizando Apollo Client.</p>
 
-            <div className={styles.teacherContainer}>
-              <img src="https://github.com/ruymon.png" alt="Avatar do Professor" />
-
-              <div className={styles.teacherDeatails}>
-                <strong>Ruy Monteiro</strong>
-                <span>Tech lead @IVAO Brasil</span>
-              </div>
-
-            </div>
+            <Teacher 
+              avatar='https://github.com/ruymon.png'
+              name='Ruy Monteiro'
+              bio='Tech lead @IVAO Brasil'
+            />
           </div>
 
           <div className={styles.lessonButtons}>
