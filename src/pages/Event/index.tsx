@@ -1,4 +1,5 @@
 import { DiscordLogo, FileArrowDown, Lightning } from "phosphor-react";
+import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { ResourceCard } from "../../components/ResourceCard";
 import { Sidebar } from "../../components/Sidebar";
@@ -58,9 +59,12 @@ export function Event() {
                 description='Baixe wallpapers exclusivos do Ignite Lab e personalize a sua máquina'
               />
             </div>
+
+            <Footer />
           </div>
 
         </div>
+
         <Sidebar />
       </main>
     </div>  

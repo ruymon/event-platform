@@ -1,0 +1,16 @@
+.container {
+  @apply flex items-center justify-between border-t border-gray-500 mt-20 py-6 text-gray-300;
+}
+
+.container div {
+  @apply flex items-center gap-6;
+}
+
+.container div svg {
+  @apply w-40;
+}
+
+.container a {
+  @apply hover:text-gray-200 hover:underline transition-all;
+}
+
