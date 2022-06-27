@@ -16,3 +16,7 @@ body {
 ::-webkit-scrollbar-thumb{
   background: #4D4D57;
 }
+
+::selection {
+  @apply bg-green-500/50;
+}
