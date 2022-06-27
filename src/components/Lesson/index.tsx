@@ -3,6 +3,7 @@ import { isPast, format } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR'
 
 import styles from './styles.module.css';
+import { Link } from 'react-router-dom';
 
 interface LessonProps {
   title: string;
@@ -18,7 +19,7 @@ export function Lesson({ title, slug, availableAt, type }: LessonProps) {
   })
 
   return (
-    <a href="#">
+    <Link to={`/event/lesson/${slug}`}>
       <span className={styles.releaseDate}>{availableDateFormatted.toString()}</span>
 
       <div className={styles.cardContainer}>
@@ -44,6 +45,6 @@ export function Lesson({ title, slug, availableAt, type }: LessonProps) {
 
         <strong className={styles.lessonTitle}>{title}</strong>
       </div>
-    </a>
+    </Link>
   )
 }

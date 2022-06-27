@@ -9,7 +9,3 @@
 .videoWrapper {
   @apply h-full w-full max-w-[1180px] max-h-[60vh] aspect-video;
 }
-
-.mock {
-  @apply h-full w-full bg-contain bg-center bg-no-repeat bg-[url(https://i.imgur.com/Bwsx58L.png)];
-}

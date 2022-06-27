@@ -27,8 +27,6 @@ interface GetLessonsQueryResponse {
 export function Sidebar() {
   const { data } = useQuery<GetLessonsQueryResponse>(GET_LESSONS_QUERY);
 
-  console.log(data);
-
   return (
     <aside className={styles.container}>
       <span className={styles.title}>Cronograma de aulas</span>
