@@ -3,7 +3,7 @@
 }
 
 .cardContainer {
-  @apply rounded border border-gray-500 p-4 mt-2;
+  @apply rounded border border-gray-500 p-4 mt-2 hover:border-green-500;
 }
 
 .cardHeader {
